@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="430.0" minWidth="360.0" prefHeight="430.0" prefWidth="360.0" style="-fx-background-color: linear-gradient(to right, #0065f9, #00ffcd);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jeux.FinalController">
+    <children>
+      <Label fx:id="l" alignment="CENTER" contentDisplay="CENTER" prefHeight="162.0" prefWidth="280.0" style="-fx-background-color: purple; -fx-background-radius: 40; -fx-border-color: #00a83b; -fx-border-width: 5; -fx-border-radius: 30;" textAlignment="CENTER" textFill="#00a83b">
+         <font>
+            <Font name="Ink Free" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <VBox.margin>
+            <Insets bottom="15.0" top="15.0" />
+         </VBox.margin>
+      </Label>
+        <Label fx:id="b1" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#nextplay" onMouseEntered="#hover" onMouseExited="#dishover" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: purple; -fx-background-radius: 40; -fx-border-color: #00a83b; -fx-border-width: 5; -fx-border-radius: 30;" text="Replay" textAlignment="CENTER" textFill="#00a83b">
+            <font>
+                <Font name="Ink Free" size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="15.0" top="15.0" />
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <Label fx:id="b2" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#nextrecord" onMouseEntered="#hover" onMouseExited="#dishover" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: purple; -fx-background-radius: 40; -fx-border-color: #00a83b; -fx-border-width: 5; -fx-border-radius: 30;" text="Main menu" textAlignment="CENTER" textFill="#00a83b">
+            <font>
+                <Font name="Ink Free" size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets bottom="15.0" top="15.0" />
+            </VBox.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+    </children>
+</VBox>

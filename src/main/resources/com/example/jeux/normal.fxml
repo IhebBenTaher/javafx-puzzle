@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="360.0" style="-fx-background-color: linear-gradient(to right, #0065f9, #00ffcd);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jeux.normalController">
+    <children>
+        <Label id="back" fx:id="back" onMouseClicked="#back" onMouseEntered="#hover" onMouseExited="#dishover" style="-fx-background-color: purple; -fx-background-radius: 30;" stylesheets="@design.css" text="BACK" textFill="#00a83b">
+            <font>
+                <Font name="Ebrima" size="14.0" />
+            </font>
+            <padding>
+                <Insets left="12.0" right="12.0" />
+            </padding>
+            <VBox.margin>
+                <Insets right="280.0" />
+            </VBox.margin>
+            <cursor>
+                <!--Cursor fx:constant="HAND" /-->
+            </cursor>
+        </Label>
+        <GridPane maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0">
+            <columnConstraints>
+                <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fx:id="i11" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <ImageView fx:id="i12" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <ImageView fx:id="i13" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+                <ImageView fx:id="i16" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <ImageView fx:id="i6" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <ImageView fx:id="i7" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <ImageView fx:id="i8" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <ImageView fx:id="i1" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fx:id="i2" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                <ImageView fx:id="i3" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                <ImageView fx:id="i4" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+                <ImageView fx:id="i9" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+                <ImageView fx:id="i14" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <ImageView fx:id="i5" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+                <ImageView fx:id="i10" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <ImageView fx:id="i15" fitHeight="75.0" fitWidth="75.0" onMouseClicked="#move" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            </children>
+            <VBox.margin>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </VBox.margin>
+        </GridPane>
+        <Label fx:id="count" style="-fx-background-color: purple; -fx-background-radius: 30;" text="Moves: 0" textFill="#00a83b">
+            <font>
+                <Font name="Ebrima" size="24.0" />
+            </font>
+            <padding>
+                <Insets left="12.0" right="12.0" />
+            </padding>
+        </Label>
+    </children>
+</VBox>
